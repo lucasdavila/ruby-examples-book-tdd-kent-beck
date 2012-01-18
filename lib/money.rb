@@ -3,10 +3,11 @@ module Money
     attr_reader :amount
 
     def initialize(amount)
+      @amount = amount
     end
 
     def times(multiplier)
-      @amount = 5 * 2
+      @amount *= multiplier
     end
   end
 end
