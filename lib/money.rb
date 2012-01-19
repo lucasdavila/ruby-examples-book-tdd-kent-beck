@@ -1,7 +1,5 @@
 module Money
   class Dollar
-    attr_reader :amount
-
     def initialize(amount)
       @amount = amount
     end
@@ -11,7 +9,7 @@ module Money
     end
 
     def ==(object)
-      @amount == object.amount
+      @amount == object
     end
   end
 end
