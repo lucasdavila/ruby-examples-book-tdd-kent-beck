@@ -13,7 +13,7 @@ class MoneyTest < MiniTest::Unit::TestCase
   end
 
   def test_equality
-    assert Money::Dollar.new(5) == Money::Dollar.new(5), 'Objetos com mesmo amount não são considerados iguais.'
-    refute Money::Dollar.new(5) == Money::Dollar.new(6), 'Objetos com amount diferente são considerados iguais.'
+    assert_equal Money::Dollar.new(5), Money::Dollar.new(5)
+    assert_not_equal Money::Dollar.new(5), Money::Dollar.new(6)
   end
 end
