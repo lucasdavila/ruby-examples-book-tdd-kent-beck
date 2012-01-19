@@ -6,12 +6,12 @@ module Money
       @amount = amount
     end
 
-    def times(multiplier)
+    def *(multiplier)
       return Dollar.new @amount * multiplier
     end
 
-    def equals(object)
-      return true
+    def ==(object)
+      return @amount == object.amount
     end
   end
 end
