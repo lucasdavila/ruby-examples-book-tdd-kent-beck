@@ -7,11 +7,11 @@ module Money
     end
 
     def *(multiplier)
-      return Dollar.new @amount * multiplier
+      Dollar.new @amount * multiplier
     end
 
     def ==(object)
-      return @amount == object.amount
+      @amount == object.amount
     end
   end
 end
